@@ -18,45 +18,5 @@ namespace Bai3
                 workerList.Add(new Worker());
             }
         }
-    }
-    abstract class Human
-    {
-        private string firstName;
-        private string lastName;
-
-        public string FirstName { get => firstName; set => firstName = value; }
-        public string LastName { get => lastName; set => lastName = value; }
-    }
-    class Student : Human
-    {
-        private int grade;
-
-        public Student()
-        {
-        }
-        public Student (int grade)
-        {
-            this.grade = grade;
-        }
-
-        public int Grade { get => grade; set => grade = value; }
-    }
-    class Worker : Human
-    {
-        private float weekSalary;
-        private float workHoursPerDay;
-
-        public Worker()
-        {
-        }
-
-        public float WeekSalary { get => weekSalary; set => weekSalary = value; }
-        public float WorkHoursPerDay { get => workHoursPerDay; set => workHoursPerDay = value; }
-        public int MoneyPerHour()
-        {
-            int moneyperhours = 0;
-            return moneyperhours;
-        }
-
-    }
+    } 
 }
